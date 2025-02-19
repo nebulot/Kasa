@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  color: #ff6060;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+.navbar__logo {
+  margin-right: auto;
+}
