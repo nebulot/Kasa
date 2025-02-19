@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./Components/Navbar.jsx";
 import Banner from "./Components/Banner.jsx";
+import ApartmentGrid from "./Components/ApartmentGrid.jsx";
+import Main from "./Components/Main.jsx";
 import "./App.css";
 
 
@@ -8,9 +10,11 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Banner/>
-      
+      <Navbar />
+      <Main>
+        <Banner />
+        <ApartmentGrid />
+      </Main>
     </div>
   );
 }
