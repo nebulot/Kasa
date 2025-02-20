@@ -5,7 +5,7 @@ import "./Main.css";
 
 function Main({ children }) {
     return (
-        <div className="main">{...children}</div>
+        <div className="main">{children}</div>
     )
 }
 

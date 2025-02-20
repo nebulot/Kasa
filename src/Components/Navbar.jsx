@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -8,14 +8,14 @@ function Navbar() {
       <div className="navbar__logo">
         <img src="./LOGO.svg" alt="logo" />
       </div>
-      <Link to="/">
+      <NavLink to="/">
         <div>Accueil</div>
-      </Link>
-      <Link to="/about">
+      </NavLink>
+      <NavLink to="/about">
         <div>A propos</div>
-      </Link>
+      </NavLink>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;

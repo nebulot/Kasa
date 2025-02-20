@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "./ApartmentGrid.css";
 
-function Apartment() {
+function ApartmentCard() {
     return (
         <div className="apartment">
             <Link to="/flat">
@@ -12,4 +12,4 @@ function Apartment() {
     );
 }
 
-export default Apartment
+export default ApartmentCard
