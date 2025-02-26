@@ -1,5 +1,5 @@
 import React from "react";
-import "./ApartmentPage.css";
+import "./ApartmentPage.scss";
 
 function ApartmentPage() {
 

@@ -1,0 +1,33 @@
+@use "../scss/variables.scss" as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  color: $color-primary;
+  font-weight: 500;
+  gap: 2rem;
+
+  @media screen and (width <=768px) {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &>*:first-child {
+    margin-right: auto;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+
+    & a.active,
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
+  & &__logo {
+    margin-right: auto;
+  }
+}

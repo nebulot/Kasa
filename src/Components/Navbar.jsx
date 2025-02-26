@@ -1,13 +1,15 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
-        <img src="./LOGO.svg" alt="logo" />
-      </div>
+      <NavLink to="/">
+        <div className="navbar__logo">
+          <img src="./LOGO.svg" alt="logo" />
+        </div>
+      </NavLink>
       <NavLink to="/">
         <div>Accueil</div>
       </NavLink>
@@ -15,7 +17,7 @@ function Navbar() {
         <div>A propos</div>
       </NavLink>
     </nav>
-  )
+  );
 }
 
 export default Navbar;
