@@ -4,11 +4,11 @@ import "./ApartmentGrid.scss";
 
 function ApartmentCard() {
     return (
-        <div className="apartment">
-            <Link to="/flat">
+        <Link to="/flat">
+            <div className="apartment">
                 <div className="apartment__subtitle">Titre de la location</div>
-            </Link>
-        </div>
+            </div>
+        </Link>
     );
 }
 

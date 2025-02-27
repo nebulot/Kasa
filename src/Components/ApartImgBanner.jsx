@@ -1,7 +1,7 @@
 import React from 'react';
-import "../Components/ApartmentBanner.scss";
+import "../Components/ApartImgBanner.scss";
 
-export function ApartmentBanner() {
+export function ApartImgBanner() {
     return (
         <div className="banner__img">
             <img src="https://picsum.photos/seed/picsum/800/400" alt="" />
