@@ -1,28 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Components/ApartmentDescription.scss";
 
-export function ApartmentDescription() {
+export function ApartmentDescription(props) {
+    const [isContentVisible, setIsContentVisible] = useState(true);
+
+    const showContent = () => {
+        setIsContentVisible(!isContentVisible);
+    };
+
+    const contentClass = (isContentVisible ? "visible" : "hidden") + " apartment__description__content";
+    const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
     return (
         <div className="apartment__description">
-            <p className="apartment__description__header">
-                <span>Description</span>
-                <i className="fas fa-chevron-down"></i>
+            <p className="apartment__description__header" onClick={showContent}>
+                <span>{props.title}</span>
+                <i className={chevronClass}></i>
             </p>
-
-            <p className="apartment__description__content">
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus
-                PageMaker including versions of Lorem Ipsum.
-            </p>
+            <p className={contentClass}>{props.content}</p>
         </div>
-    )
+    );
+
 }
 
 export default ApartmentDescription
