@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../Components/ApartmentDescription.scss";
 
 export function ApartmentDescription(props) {
-    const [isContentVisible, setIsContentVisible] = useState(true);
+    const [isContentVisible, setIsContentVisible] = useState(false);
 
     const showContent = () => {
         setIsContentVisible(!isContentVisible);
@@ -13,7 +13,7 @@ export function ApartmentDescription(props) {
     return (
         <div className="apartment__description">
             <p className="apartment__description__header" onClick={showContent}>
-                <span>{props.title}</span>
+                <span className="apartment__description__title">{props.title}</span>
                 <i className={chevronClass}></i>
             </p>
             <p className={contentClass}>{props.content}</p>
@@ -22,4 +22,3 @@ export function ApartmentDescription(props) {
 
 }
 
-export default ApartmentDescription
