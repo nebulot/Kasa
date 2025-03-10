@@ -4,10 +4,15 @@ export const useApartments = () => {
     const [apartments, setApartments] = useState([]);
     useEffect(() => {
         const abortController = new AbortController();
-        fetch("db.json", { signal: abortController.signal })
+        fetch("/Nebulotelodie_Kasa/db.json", { signal: abortController.signal })
             .then((res) => res.json())
-            .then((res) => setApartments(res))
-            .catch(console.error);
+            .then((res) => {
+                console.log("Apartments fetched:", res); // Vérifie les données récupérées
+                setApartments(res);
+            })
+            .catch((error) => {
+                console.error("Error fetching apartments:", error);
+            });
 
         return () => {
             console.log("cleanup");
