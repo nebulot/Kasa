@@ -7,7 +7,10 @@ Kasa est spécialisé dans la location de biens immobiliers de particulier à pa
 Chaque carte d'appartement à louer, doit avoir un carroussel d'image, un descriptif et des informations sur le propriétaire. 
 
 ## 📱 Vue maquette sur mobile, ci-dessous :
-[Brief](https://www.figma.com/design/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?node-id=3-0)
+[Photo du projet](https://github.com/nebulot/Nebulotelodie_Kasa/blob/main/src/assets/198901475-819084cc-e564-45b8-8d0b-5a6a20abb924.png)
+
+Maquettes desktop/laptop/mobil
+[Lien Figma](https://www.figma.com/design/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?node-id=3-0)
   
 
 
@@ -46,5 +49,5 @@ Sass compilera automatiquement tous les changements dans le fichier style.css.
 ## 🔗 Liens :
 
 W3C validator 
-["W3C Fichier"]().
+["W3C Fichier"](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2Fnebulot%2FNebulotelodie_Kasa).
  
